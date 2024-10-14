@@ -1,18 +1,26 @@
 [
-    {
-        "id": "1",
-        "title": "Create a Fastify backend",
-        "description": "Set up the basic Fastify backend with ESM",
-        "priority": "High",
-        "dueDate": "2024-10-20T12:00:00Z",
-        "completed": false
-    },
-    {
-        "id": "2",
-        "title": "Create a Vue Frontend",
-        "description": "Set up the basic Vue.js front end for the Todo list app",
-        "priority": "High",
-        "dueDate": "2024-10-20T12:00:00Z",
-        "completed": false
-    }
+  {
+    "id": "1",
+    "title": "Create a Fastify backend",
+    "description": "Set up the basic Fastify backend with ESM",
+    "priority": "High",
+    "dueDate": "2024-10-20T12:00:00Z",
+    "completed": false
+  },
+  {
+    "id": "2",
+    "title": "Create a Vue Frontend",
+    "description": "Set up the basic Vue.js front end for the Todo list app",
+    "priority": "High",
+    "dueDate": "2024-10-20T12:00:00Z",
+    "completed": false
+  },
+  {
+    "id": "3",
+    "title": "Update backend to include more features",
+    "description": "build Get todos, Get todo/{:id}, POST todo, put todo/{:id} ( update ), delete todo/{:id}",
+    "priority": "High",
+    "dueDate": "2024-10-14T12:00:00Z",
+    "completed": true
+  }
 ]
