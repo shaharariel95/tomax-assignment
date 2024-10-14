@@ -1,0 +1,18 @@
+[
+    {
+        "id": "1",
+        "title": "Create a Fastify backend",
+        "description": "Set up the basic Fastify backend with ESM",
+        "priority": "High",
+        "dueDate": "2024-10-20T12:00:00Z",
+        "completed": false
+    },
+    {
+        "id": "2",
+        "title": "Create a Vue Frontend",
+        "description": "Set up the basic Vue.js front end for the Todo list app",
+        "priority": "High",
+        "dueDate": "2024-10-20T12:00:00Z",
+        "completed": false
+    }
+]
