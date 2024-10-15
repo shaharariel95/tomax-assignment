@@ -4,18 +4,20 @@
 
 @layer components {
     .btn {
-        @apply px-4 py-2 rounded-md text-sm font-medium transition-colors duration-200;
+        @apply px-4 py-2 rounded-md text-sm font-medium transition-colors duration-200 border-2 w-full max-w-xs;
+        @apply md:w-40 lg:w-48 md:h-10 lg:h-12;
     }
 
     .btn-primary {
-        @apply bg-blue-500 text-white hover:bg-blue-600;
+        @apply text-blue-500 bg-[#1a1a1a] border-transparent hover:border-blue-600;
     }
 
     .btn-danger {
-        @apply bg-red-500 text-white hover:bg-red-600;
+        @apply text-red-500 bg-[#1a1a1a] border-transparent hover:border-red-600;
     }
 
     .btn-success {
-        @apply bg-green-500 text-white hover:bg-green-600;
+        @apply text-green-500 bg-[#1a1a1a] border-transparent hover:border-green-600;
     }
+
 }

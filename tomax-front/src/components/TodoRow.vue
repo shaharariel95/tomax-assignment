@@ -8,32 +8,38 @@ const formattedDate = computed(() => {
   return new Date(props.todo.dueDate).toLocaleString();
 });
 
-const arrowIcon = computed(() => {
-  return props.isSelected ? '▼' : '▶';
+const priorityClass = computed(() => {
+  switch (props.todo.priority) {
+    case 'high':
+      return 'bg-red-500';
+    case 'medium':
+      return 'bg-yellow-500';
+    case 'low':
+      return 'bg-green-500';
+    default:
+      return 'bg-gray-500';
+  }
 });
 </script>
 
 <template>
-  <tr class="border-t border-gray-100 ">
-    <td @click="$emit('toggle-details')" class="p-4 cursor-pointer border-r">
-      <span class="inline-block w-4 mr-2">{{ arrowIcon }}</span>
+  <tr class="border-t border-gray-100">
+    <td @click="$emit('toggle-details')" :class="['p-4 cursor-pointer text-white', priorityClass]">
       {{ todo.title }}
-    </td>
-    <td class="p-4">
-      <button @click="$emit('delete')" class="btn btn-danger mr-2">Delete</button>
-      <button @click="$emit('edit', todo)" class="btn btn-primary mr-2">Edit</button>
-      <button @click="$emit('mark-complete')" class="btn btn-success">
-        {{ todo.completed ? "Completed" : "Mark Complete" }}
-      </button>
     </td>
   </tr>
   <tr v-if="isSelected">
-    <td colspan="2" class="p-4 ">
-      <div class="text-sm">
-        <p><strong>Description:</strong> {{ todo.description }}</p>
-        <p><strong>Priority:</strong> {{ todo.priority }}</p>
-        <p><strong>Due Date:</strong> {{ formattedDate }}</p>
-        <p><strong>Completed:</strong> {{ todo.completed ? 'Yes' : 'No' }}</p>
+    <td colspan="2" class="p-4">
+      <div class="text-base">
+        <p class="text-start"><strong>Description:</strong> {{ todo.description }}</p>
+        <p class="text-start"><strong>Priority:</strong> {{ todo.priority }}</p>
+        <p class="text-start"><strong>Due Date:</strong> {{ formattedDate }}</p>
+        <p class="text-start"><strong>Completed:</strong> {{ todo.completed ? 'Yes' : 'No' }}</p>
+        <button @click="$emit('mark-complete')" class="btn btn-success mr-4 text-base mt-5 p-3">
+          {{ todo.completed ? "Completed" : "Mark Complete" }}
+        </button>
+        <button @click="$emit('edit', todo)" class="btn btn-primary mr-4 text-base">Edit</button>
+        <button @click="$emit('delete')" class="btn btn-danger text-base">Delete</button>
       </div>
     </td>
   </tr>
