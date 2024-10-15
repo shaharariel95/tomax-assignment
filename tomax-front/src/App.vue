@@ -29,9 +29,9 @@ const handleEditTodo = (todo) => {
 </script>
 
 <template>
-  <div class="container mx-auto p-4">
-    <h1 class="text-2xl font-bold mb-4">Todo List</h1>
-    <AddTodoButton @click="openAddForm" />
+  <div class="container mx-auto p-4 flex flex-col items-start">
+    <h1 class="text-2xl font-bold mb-4 self-center">Todo List</h1>
+    <AddTodoButton class="self-end" @click="openAddForm" />
     <TodoTable 
       :todos="todos"
       @delete="deleteTodo"

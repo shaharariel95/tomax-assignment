@@ -16,9 +16,9 @@ const toggleDetails = (id) => {
   <div class="space-y-4">
     <div v-if="todos.length > 0" class="overflow-hidden rounded-lg border border-gray-200 shadow-sm">
       <table class="w-full text-sm">
-        <thead class="bg-gray-50 text-left text-gray-500">
+        <thead class="bg-[#18181b] text-left text-gray-500  rounded-t-lg">
           <tr>
-            <th class="p-4 font-medium">Title</th>
+            <th class="p-4 font-medium border-r">Title</th>
             <th class="p-4 font-medium">Actions</th>
           </tr>
         </thead>

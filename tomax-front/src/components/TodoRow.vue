@@ -7,11 +7,16 @@ const emit = defineEmits(['toggle-details', 'delete', 'edit', 'mark-complete']);
 const formattedDate = computed(() => {
   return new Date(props.todo.dueDate).toLocaleString();
 });
+
+const arrowIcon = computed(() => {
+  return props.isSelected ? '▼' : '▶';
+});
 </script>
 
 <template>
-  <tr class="border-b border-gray-100">
-    <td @click="$emit('toggle-details')" class="p-4 cursor-pointer">
+  <tr class="border-t border-gray-100 ">
+    <td @click="$emit('toggle-details')" class="p-4 cursor-pointer border-r">
+      <span class="inline-block w-4 mr-2">{{ arrowIcon }}</span>
       {{ todo.title }}
     </td>
     <td class="p-4">
