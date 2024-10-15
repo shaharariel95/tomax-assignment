@@ -18,20 +18,19 @@ const handleEditTodo = (todo) => {
   console.log("Editing todo:", todo);
 };
 
-// Filtering logic
-const selectedPriorities = ref([]);
+// Updated filtering logic
+const selectedPriority = ref('all');
 const filteredTodos = computed(() => {
-  if (selectedPriorities.value.length === 0) {
+  console.log('Current todos:', todos.value); // Debug log
+  console.log('Selected priority:', selectedPriority.value); // Debug log
+  if (selectedPriority.value === 'all') {
     return todos.value;
   }
-  return todos.value.filter(todo => selectedPriorities.value.includes(todo.priority));
+  return todos.value.filter(todo => todo.priority === selectedPriority.value);
 });
-const togglePriorityFilter = (priority) => {
-  if (selectedPriorities.value.includes(priority)) {
-    selectedPriorities.value = selectedPriorities.value.filter(p => p !== priority);
-  } else {
-    selectedPriorities.value.push(priority);
-  }
+const setPriorityFilter = (priority) => {
+  selectedPriority.value = priority;
+  console.log('Filter set to:', priority); // Debug log
 };
 </script>
 
@@ -41,15 +40,22 @@ const togglePriorityFilter = (priority) => {
       <h1 class="text-2xl font-bold mb-4 self-center">Todo List</h1>
       <AddTodoButton class="self-end" @click="openAddForm" />
 
-      <!-- Filter Buttons Row -->
+      <!-- Debug info -->
+      <div class="text-sm mb-2">
+        <p>Total todos: {{ todos.length }}</p>
+        <p>Filtered todos: {{ filteredTodos.length }}</p>
+        <p>Selected priority: {{ selectedPriority }}</p>
+      </div>
+
+      <!-- Updated Filter Buttons Row -->
       <div class="flex flex-wrap gap-2 mb-4">
         <button
-          v-for="priority in ['high', 'medium', 'low']"
+          v-for="priority in ['all', 'High', 'Medium', 'Low']"
           :key="priority"
-          @click="togglePriorityFilter(priority)"
+          @click="setPriorityFilter(priority)"
           :class="[
             'px-4 py-2 rounded-md text-sm font-medium transition-colors duration-200',
-            selectedPriorities.includes(priority) ? 'bg-blue-500 text-white' : 'bg-gray-700 text-gray-200'
+            selectedPriority === priority ? 'bg-blue-500 text-white' : 'bg-gray-700 text-gray-200'
           ]"
         >
           {{ priority.charAt(0).toUpperCase() + priority.slice(1) }}
