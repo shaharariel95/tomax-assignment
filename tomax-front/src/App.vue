@@ -71,8 +71,23 @@ const setPriorityFilter = (priority) => {
   </div>
 </template> -->
 <script setup>
+import { ref } from 'vue'
 import AddTodoButton from './components/AddTodoButton.vue';
 import Newtable from './components/Newtable.vue'
+import AddTodoForm from './components/AddTodoForm.vue';
+import { useTodos } from './composables/useTodos';
+
+
+const { todos, addTodo, deleteTodo, editTodo, markComplete } = useTodos();
+
+const showAddForm = ref(false);
+const openAddForm = () => { showAddForm.value = true; };
+const closeAddForm = () => { showAddForm.value = false; };
+const handleAddTodo = (newTodo) => {
+  addTodo(newTodo);
+  closeAddForm();
+};
+
 </script>
 <template>
   <!-- <AddTodoButton class="" @click="openAddForm" /> -->
@@ -84,16 +99,25 @@ import Newtable from './components/Newtable.vue'
       <Newtable/>
     </div>
   </div> -->
-  <div class="w-screen h-screen flex items-center justify-center p-4">
-  <div class="w-full h-full max-w-[90%] max-h-[90%] bg-amber-50 rounded-lg shadow-lg overflow-hidden p-4">
-        <div class="flex justify-between items-center mb-4">
-          <div class="w-1/3"></div>
-          <h1 class="text-2xl font-bold text-center w-1/3">ToDo List</h1>
-          <div class="w-1/3 flex justify-end">
-            <AddTodoButton/>
-          </div>
+  <div class="w-screen h-screen flex items-center justify-center p-4 bg-gradient-to-b from-gray-300 to-gray-500" >
+  <div class="w-full h-full max-w-[95%] max-h-[95%] bg-amber-50 rounded-lg shadow-lg overflow-hidden p-4">
+    <div class="flex items-center mb-4 justify-between">
+        <h1 class="text-4xl font-bold inline-flex pl-2 w-full">
+          <img class="w-10 mr-2" src="./assets/edit-svgrepo-com.svg" />
+          ToDo List
+        </h1>
+        <div class="flex justify-end ml-auto">
+          <AddTodoButton class="self-end" @click="openAddForm" />
         </div>
-        <Newtable /> 
       </div>
+      <Newtable /> 
     </div>
+  </div>
+  <div>
+    <AddTodoForm 
+        v-if="showAddForm"
+        @add="handleAddTodo"
+        @close="closeAddForm"
+      />
+  </div>
 </template>
