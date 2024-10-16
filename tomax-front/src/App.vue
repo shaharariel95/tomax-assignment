@@ -1,4 +1,4 @@
-<script setup>
+<!-- <script setup>
 import { ref, computed } from 'vue';
 import TodoTable from './components/TodoTable.vue';
 import AddTodoButton from './components/AddTodoButton.vue';
@@ -39,15 +39,6 @@ const setPriorityFilter = (priority) => {
     <div class="container mx-auto p-4 flex flex-col items-start lg:space-y-4">
       <h1 class="text-2xl font-bold mb-4 self-center">Todo List</h1>
       <AddTodoButton class="self-end" @click="openAddForm" />
-
-      <!-- Debug info -->
-      <div class="text-sm mb-2">
-        <p>Total todos: {{ todos.length }}</p>
-        <p>Filtered todos: {{ filteredTodos.length }}</p>
-        <p>Selected priority: {{ selectedPriority }}</p>
-      </div>
-
-      <!-- Updated Filter Buttons Row -->
       <div class="flex flex-wrap gap-2 mb-4">
         <button
           v-for="priority in ['all', 'High', 'Medium', 'Low']"
@@ -78,4 +69,31 @@ const setPriorityFilter = (priority) => {
       />
     </div>
   </div>
+</template> -->
+<script setup>
+import AddTodoButton from './components/AddTodoButton.vue';
+import Newtable from './components/Newtable.vue'
+</script>
+<template>
+  <!-- <AddTodoButton class="" @click="openAddForm" /> -->
+   <!-- <div>
+    <h1 class="text-2xl font-bold mb-4 self-center text-white">Todo List</h1>
+   </div>
+  <div class="w-screen h-screen flex items-center justify-center p-4">
+    <div class="w-full h-full max-w-[90%] max-h-[90%] bg-amber-50 rounded-lg shadow-lg overflow-hidden p-4">
+      <Newtable/>
+    </div>
+  </div> -->
+  <div class="w-screen h-screen flex items-center justify-center p-4">
+  <div class="w-full h-full max-w-[90%] max-h-[90%] bg-amber-50 rounded-lg shadow-lg overflow-hidden p-4">
+        <div class="flex justify-between items-center mb-4">
+          <div class="w-1/3"></div>
+          <h1 class="text-2xl font-bold text-center w-1/3">ToDo List</h1>
+          <div class="w-1/3 flex justify-end">
+            <AddTodoButton/>
+          </div>
+        </div>
+        <Newtable /> 
+      </div>
+    </div>
 </template>

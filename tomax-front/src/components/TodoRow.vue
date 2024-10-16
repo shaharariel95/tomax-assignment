@@ -26,7 +26,7 @@ const titleClass = computed(() => {
 
 <template>
   <tr class="border-t border-gray-100">
-    <td @click="$emit('toggle-details')" :class="['p-4 cursor-pointer text-slate-900', priorityClass]">
+    <td @click="$emit('toggle-details')" :class="['p-4 cursor-pointer', priorityClass]">
       <span :class="titleClass">{{ todo.title }}</span>
     </td>
   </tr>
