@@ -71,14 +71,13 @@ const setPriorityFilter = (priority) => {
   </div>
 </template> -->
 <script setup>
-import { ref } from 'vue'
+import { ref, computed } from 'vue';
 import AddTodoButton from './components/AddTodoButton.vue';
-import Newtable from './components/Newtable.vue'
+import Newtable from './components/Newtable.vue';
 import AddTodoForm from './components/AddTodoForm.vue';
 import { useTodos } from './composables/useTodos';
 
-
-const { todos, addTodo, deleteTodo, editTodo, markComplete } = useTodos();
+const { todos, error, addTodo, deleteTodo, editTodo, markComplete } = useTodos();
 
 const showAddForm = ref(false);
 const openAddForm = () => { showAddForm.value = true; };
@@ -88,11 +87,13 @@ const handleAddTodo = (newTodo) => {
   closeAddForm();
 };
 
+const showError = computed(() => !!error.value);
 </script>
+
 <template>
-  <div class="w-screen h-screen flex items-center justify-center p-4 bg-gradient-to-b from-gray-300 to-gray-500" >
-  <div class="w-full h-full max-w-[95%] max-h-[95%] bg-amber-50 rounded-lg shadow-lg overflow-hidden p-4">
-    <div class="flex items-center mb-4 justify-between">
+  <div class="w-screen h-screen flex items-center justify-center p-4 bg-gradient-to-b from-gray-300 to-gray-500">
+    <div class="w-full h-full max-w-[95%] max-h-[95%] bg-amber-50 rounded-lg shadow-lg overflow-hidden p-4">
+      <div class="flex items-center mb-4 justify-between">
         <h1 class="text-4xl font-bold inline-flex pl-2 w-full">
           <img class="w-10 mr-2" src="./assets/edit-svgrepo-com.svg" />
           ToDo List
@@ -101,14 +102,21 @@ const handleAddTodo = (newTodo) => {
           <AddTodoButton class="self-end" @click="openAddForm" />
         </div>
       </div>
-      <Newtable /> 
+      
+      <Newtable :todos="todos" @delete="deleteTodo" @edit="editTodo" @mark-complete="markComplete" />
     </div>
   </div>
-  <div>
-    <AddTodoForm 
-        v-if="showAddForm"
-        @add="handleAddTodo"
-        @close="closeAddForm"
-      />
+  <div v-if="showError" class="fixed inset-0 m-40 w-auto h-fit bg-red-300 border border-red-500 text-red-800 px-4 py-3 rounded mb-4 flex justify-center items-center " role="alert">
+    <div>
+      <strong class="font-bold">Error:</strong>
+      <span class="block sm:inline">{{ error }}</span>
+    </div>
+    <button class="absolute top-2 right-2 w-14 text-center " @click="error = null">x</button>
   </div>
+
+  <AddTodoForm 
+    v-if="showAddForm"
+    @add="handleAddTodo"
+    @close="closeAddForm"
+  />
 </template>
