@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn {
+        @apply px-4 py-2 rounded-md text-sm font-medium transition-colors duration-200 border-2;
+    }
+
+    .btn-primary {
+        @apply text-blue-500 hover:bg-cyan-200 border-transparent border-blue-600;
+    }
+
+    .btn-danger {
+        @apply text-red-500 hover:bg-red-200 border-transparent border-red-600;
+    }
+
+    .btn-success {
+        @apply text-green-500 hover:bg-green-200 border-transparent border-green-600;
+    }
+
+}
