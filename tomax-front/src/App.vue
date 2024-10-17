@@ -90,15 +90,6 @@ const handleAddTodo = (newTodo) => {
 
 </script>
 <template>
-  <!-- <AddTodoButton class="" @click="openAddForm" /> -->
-   <!-- <div>
-    <h1 class="text-2xl font-bold mb-4 self-center text-white">Todo List</h1>
-   </div>
-  <div class="w-screen h-screen flex items-center justify-center p-4">
-    <div class="w-full h-full max-w-[90%] max-h-[90%] bg-amber-50 rounded-lg shadow-lg overflow-hidden p-4">
-      <Newtable/>
-    </div>
-  </div> -->
   <div class="w-screen h-screen flex items-center justify-center p-4 bg-gradient-to-b from-gray-300 to-gray-500" >
   <div class="w-full h-full max-w-[95%] max-h-[95%] bg-amber-50 rounded-lg shadow-lg overflow-hidden p-4">
     <div class="flex items-center mb-4 justify-between">
