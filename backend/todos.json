@@ -13,7 +13,7 @@
     "description": "Set up the basic Vue.js front end for the Todo list app",
     "priority": "High",
     "dueDate": "2024-10-20T12:00:00Z",
-    "completed": true
+    "completed": false
   },
   {
     "id": "3",
@@ -21,7 +21,7 @@
     "description": "build Get todos, Get todo/{:id}, POST todo, put todo/{:id} ( update ), delete todo/{:id}",
     "priority": "High",
     "dueDate": "2024-10-14T12:00:00Z",
-    "completed": true
+    "completed": false
   },
   {
     "id": "4",
@@ -29,7 +29,7 @@
     "title": "build the backend for the Tomax assignment",
     "description": "Finish report aljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk Finish report aljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdv Finish report aljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdv",
     "dueDate": "2024-10-20",
-    "completed": true
+    "completed": false
   },
   {
     "id": "5",
@@ -88,14 +88,6 @@
     "completed": true
   },
   {
-    "id": "12",
-    "priority": "Low",
-    "title": "Task 9",
-    "description": "Team meeting a;fjvalerjvb slfjba;lfja;lkjfd a;jdFinish report aljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk Finish report aljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdv Finish report aljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvfba;jrf s",
-    "dueDate": "2024-10-28",
-    "completed": false
-  },
-  {
     "title": "Testing test",
     "description": "Testing the Testing add todo",
     "priority": "Low",
@@ -134,13 +126,5 @@
     "dueDate": "1231-12-31T23:04",
     "completed": false,
     "id": "1729244324276"
-  },
-  {
-    "title": "לנקות את החדר",
-    "description": "החדר מלוכלך צריך לנקות",
-    "priority": "High",
-    "dueDate": "2024-10-18T15:00",
-    "completed": false,
-    "id": "1729250470391"
   }
 ]
