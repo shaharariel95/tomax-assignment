@@ -22,13 +22,13 @@ const showError = computed(() => !!error.value);
   <div class="min-h-screen bg-gradient-to-b from-gray-300 to-gray-500">
     <div class="w-screen h-screen sm:h-auto sm:min-h-screen sm:p-4 sm:flex sm:items-center sm:justify-center">
       <div class="w-full h-screen sm:w-[95%] sm:h-[95%] bg-amber-50 sm:rounded-lg sm:shadow-lg overflow-hidden flex flex-col">
-        <div class="flex items-center justify-between p-4 bg-amber-100 border-b border-amber-200">
+        <div class="flex items-center justify-between p-4 bg-amber-50 border-b border-amber-50">
           <h1 class="text-2xl sm:text-4xl font-bold inline-flex items-center">
             <img class="w-6 sm:w-10 mr-2" src="./assets/edit-svgrepo-com.svg" alt="Edit icon" />
             ToDo List
           </h1>
           <div class="flex items-center space-x-2">
-            <span class="font-semibold text-sm sm:text-base">add</span>
+            <span class="font-bold text-sm sm:text-xl">add</span>
             <AddTodoButton @click="openAddForm" />
           </div>
         </div>
