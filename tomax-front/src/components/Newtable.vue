@@ -76,23 +76,24 @@ function toggleSort(column) {
     <table class="w-full border-collapse text-lg rounded-sm table-auto">
       <thead class="bg-gray-200 h-1 text-xl">
         <tr>
-          <th @click="toggleSort('priority')" class="border-2 border-black p-4 w-[5%] cursor-pointer">
+          <th @click="toggleSort('priority')" class="border-2 border-black p-4 w-[8%] cursor-pointer">
             Priority
             <span v-if="sortBy === 'priority'">&nbsp;{{ sortOrder === 'asc' ? '▲' : '▼' }}</span>
+            <span v-else>&nbsp;♦</span>
           </th>
-          <th class="border-2 border-black p-4 w-[25%]">Title</th>
-          <th class="border-2 border-black p-4 w-[45%]">Description</th>
+          <th class="border-2 border-black p-4 w-[23%]">Title</th>
+          <th class="border-2 border-black p-4 w-[47%]">Description</th>
           <th @click="toggleSort('dueDate')" class="border-2 border-black p-4 w-[10%] cursor-pointer">
             Due Date
             <span v-if="sortBy === 'dueDate'">&nbsp;{{ sortOrder === 'asc' ? '▲' : '▼' }}</span>
             <span v-else>&nbsp;♦</span>
-
           </th>
-          <th @click="toggleSort('status')" class="border-2 border-black p-4 w-[5%] cursor-pointer">
+          <th @click="toggleSort('status')" class="border-2 border-black p-4 w-[7%] cursor-pointer">
             Status
             <span v-if="sortBy === 'status'">&nbsp;{{ sortOrder === 'asc' ? '▲' : '▼' }}</span>
+            <span v-else>&nbsp;♦</span>
           </th>
-          <th class="border-2 border-black p-4 w-[10%]">Actions</th>
+          <th class="border-2 border-black p-4 w-[5%]">Delete</th>
         </tr>
       </thead>
       <tbody>
@@ -140,7 +141,7 @@ function toggleSort(column) {
             </button>
           </td>
           <td class="border-b-2 border-r-2 border-black w-min text-center">
-            <button class="btn btn-primary mr-3 text-base  p-1" @click="emit('edit', todo.id)"><img class="w-8" :src="editIcon"/></button>
+            <!-- <button class="btn btn-primary mr-3 text-base  p-1" @click="emit('edit', todo.id)"><img class="w-8" :src="editIcon"/></button> -->
             <button class="btn btn-danger text-base  p-1" @click="emit('delete', todo.id)"><img class="w-8" :src='deleteIcon'/></button>
           </td>
         </tr>

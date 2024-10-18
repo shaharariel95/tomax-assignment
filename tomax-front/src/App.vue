@@ -98,12 +98,13 @@ const showError = computed(() => !!error.value);
           <img class="w-10 mr-2" src="./assets/edit-svgrepo-com.svg" />
           ToDo List
         </h1>
-        <div class="flex justify-end ml-auto">
+        <div class="flex items-center justify-end ml-auto space-x-2">
+          <span class="font-semibold">add</span>
           <AddTodoButton class="self-end" @click="openAddForm" />
         </div>
       </div>
       
-      <Newtable :todos="todos" @delete="deleteTodo" @edit="editTodo" @mark-complete="markComplete" />
+      <Newtable :todos="todos" @delete="deleteTodo" @edit="editTodo" @mark-complete="markComplete" /> <!-- TODO: rename the table-->
     </div>
   </div>
   <div v-if="showError" class="fixed inset-0 m-40 w-auto h-fit bg-red-300 border border-red-500 text-red-800 px-4 py-3 rounded mb-4 flex justify-center items-center " role="alert">
