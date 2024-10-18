@@ -5,7 +5,7 @@
     "description": "Set up the basic Fastify backend with ESM",
     "priority": "High",
     "dueDate": "2024-10-20T12:00:00Z",
-    "completed": false
+    "completed": true
   },
   {
     "id": "2",
@@ -13,7 +13,7 @@
     "description": "Set up the basic Vue.js front end for the Todo list app",
     "priority": "High",
     "dueDate": "2024-10-20T12:00:00Z",
-    "completed": false
+    "completed": true
   },
   {
     "id": "3",
@@ -21,7 +21,7 @@
     "description": "build Get todos, Get todo/{:id}, POST todo, put todo/{:id} ( update ), delete todo/{:id}",
     "priority": "High",
     "dueDate": "2024-10-14T12:00:00Z",
-    "completed": false
+    "completed": true
   },
   {
     "id": "4",
@@ -29,7 +29,7 @@
     "title": "build the backend for the Tomax assignment",
     "description": "Finish report aljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk Finish report aljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdv Finish report aljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdv",
     "dueDate": "2024-10-20",
-    "completed": false
+    "completed": true
   },
   {
     "id": "5",

@@ -44,7 +44,7 @@ const submitForm = () => {
                   class="mt-1 block w-full rounded-md bg-amber-50 border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
             <option>High</option>
             <option>Medium</option>
-            <option>High</option>
+            <option>Low</option>
           </select>
         </div>
         <div>
