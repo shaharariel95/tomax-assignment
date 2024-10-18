@@ -85,6 +85,8 @@ function toggleSort(column) {
           <th @click="toggleSort('dueDate')" class="border-2 border-black p-4 w-[10%] cursor-pointer">
             Due Date
             <span v-if="sortBy === 'dueDate'">&nbsp;{{ sortOrder === 'asc' ? '▲' : '▼' }}</span>
+            <span v-else>&nbsp;♦</span>
+
           </th>
           <th @click="toggleSort('status')" class="border-2 border-black p-4 w-[5%] cursor-pointer">
             Status
@@ -138,8 +140,8 @@ function toggleSort(column) {
             </button>
           </td>
           <td class="border-b-2 border-r-2 border-black w-min text-center">
-            <button class="btn btn-primary mr-3 text-base" @click="emit('edit', todo.id)"><img class="w-5" :src="editIcon"/></button>
-            <button class="btn btn-danger text-base" @click="emit('delete', todo.id)"><img class="w-5" :src='deleteIcon'/></button>
+            <button class="btn btn-primary mr-3 text-base  p-1" @click="emit('edit', todo.id)"><img class="w-8" :src="editIcon"/></button>
+            <button class="btn btn-danger text-base  p-1" @click="emit('delete', todo.id)"><img class="w-8" :src='deleteIcon'/></button>
           </td>
         </tr>
       </tbody>
