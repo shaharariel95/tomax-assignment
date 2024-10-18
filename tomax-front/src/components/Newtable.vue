@@ -5,6 +5,8 @@ import deleteIcon from '../assets/delete-svgrepo-com.svg';
 import highPriorityIcon from '../assets/high-priority.svg';
 import mediumPriorityIcon from '../assets/medium-priority.svg';
 import lowPriorityIcon from '../assets/low-priority.svg';
+import checked_square from '../assets/square-check-svgrepo-com.svg'
+import square from '../assets/square-svgrepo-com.svg'
 
 const props = defineProps({
   todos: {
@@ -120,7 +122,7 @@ function toggleSort(column) {
           <td class="border-b-2 border-black p-4">{{ todo.dueDate }}</td>
           <td class="border-b-2 border-black p-4">
             <button class="btn btn-success" @click="emit('mark-complete', todo.id)">
-              <img class="w-5 text-center" :src="todo.completed ? '../assets/square-check-svgrepo-com.svg' : '../assets/square-svgrepo-com.svg'" />
+              <img class="w-5 text-center" :src="todo.completed ? checked_square : square" />
             </button>
           </td>
           <td class="border-b-2 border-r-2 border-black w-min text-center">
