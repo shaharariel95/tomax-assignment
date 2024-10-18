@@ -13,7 +13,7 @@
     "description": "Set up the basic Vue.js front end for the Todo list app",
     "priority": "High",
     "dueDate": "2024-10-20T12:00:00Z",
-    "completed": false
+    "completed": true
   },
   {
     "id": "3",
@@ -29,7 +29,7 @@
     "title": "build the backend for the Tomax assignment",
     "description": "Finish report aljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk Finish report aljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdv Finish report aljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdv",
     "dueDate": "2024-10-20",
-    "completed": false
+    "completed": true
   },
   {
     "id": "5",
@@ -93,14 +93,6 @@
     "title": "Task 9",
     "description": "Team meeting a;fjvalerjvb slfjba;lfja;lkjfd a;jdFinish report aljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk Finish report aljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdv Finish report aljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvfba;jrf s",
     "dueDate": "2024-10-28",
-    "completed": false
-  },
-  {
-    "id": "13",
-    "priority": "High",
-    "title": "Task 10",
-    "description": "Team meeting a;fjvalerjvb sFinish report aljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk Finish report aljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdv Finish report aljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvlfjba;lfja;lkjfd a;jdfba;jrf s",
-    "dueDate": "2024-10-29",
     "completed": false
   },
   {

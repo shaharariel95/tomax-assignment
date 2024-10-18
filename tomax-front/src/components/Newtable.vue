@@ -82,7 +82,7 @@ function closePopup() {
 </script>
 
 <template>
-    <div class="flex flex-col h-screen">
+    <div class="flex flex-col h-screen max-h-[75vh]">
       <div v-if="props.todos.length === 0" class="text-center py-4">
         No todos available. Add a new todo to get started!
       </div>
@@ -152,12 +152,12 @@ function closePopup() {
                   }) }}
                 </td>
                 <td class="border-b-2 border-black p-4">
-                  <button class="p-0 mt-1" @click="emit('mark-complete', todo.id)">
+                  <button class="p-0 mt-1 btn btn-success" @click="emit('mark-complete', todo.id)">
                     <img class="w-10 p-0 text-center" :src="todo.completed ? checked_square : square" />
                   </button>
                 </td>
                 <td class="border-b-2 border-r-2 border-black w-min text-center">
-                  <button class="p-1" @click="emit('delete', todo.id)">
+                  <button class="p-1 btn btn-danger" @click="emit('delete', todo.id)">
                     <img class="w-8" :src='deleteIcon'/>
                   </button>
                 </td>
@@ -208,7 +208,7 @@ function closePopup() {
       </div>
   
       <!-- Pagination -->
-      <div v-if="totalPages > 1" class="fixed bottom-0 left-0 right-0 bg-white py-4 flex justify-center">
+      <div v-if="totalPages > 1" class="fixed bottom-0 left-0 right-0 py-4 flex justify-center">
         <button 
           v-for="page in totalPages" 
           :key="page" 
