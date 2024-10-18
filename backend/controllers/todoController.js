@@ -58,10 +58,7 @@ export const addTodo = async (request, reply) => {
 export const updateTodo = async (request, reply) => {
     try {
         const { id } = request.params;
-        console.log(`tryting updating todo with id: ${id}`)
         const updatedTodo = request.body;
-        console.log(`updated todo: `)
-        console.log(updatedTodo)
         const todos = await readTodos();
         const index = todos.findIndex(todo => todo.id === id);
         if (index === -1) {

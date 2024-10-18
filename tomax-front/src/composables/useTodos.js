@@ -44,8 +44,10 @@ export function useTodos() {
             if (!response.ok) {
                 throw new Error('Failed to add todo');
             }
-            // const addedTodo = await response.json();
-            todos.value.push(addedTodo);
+            const addedTodo = await response.json();
+            // console.log(`added todo:`)
+            // console.log(addedTodo)
+            todos.value.push(newTodo);
         } catch (err) {
             error.value = err.message;
             console.error(err);

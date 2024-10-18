@@ -18,9 +18,10 @@ const props = defineProps({
 const emit = defineEmits(['delete', 'edit', 'mark-complete']);
 
 const currentPage = ref(1);
-const itemsPerPage = 8;
+const itemsPerPage = 7;
 const sortBy = ref('priority');
-const sortOrder = ref('asc');
+const sortOrder = ref('desc');
+
 
 const sortedTodos = computed(() => {
   return [...props.todos].sort((a, b) => {
@@ -30,13 +31,13 @@ const sortedTodos = computed(() => {
         ? priorityOrder[a.priority] - priorityOrder[b.priority]
         : priorityOrder[b.priority] - priorityOrder[a.priority];
     } else if (sortBy.value === 'dueDate') {
-      return sortOrder.value === 'asc' 
-        ? new Date(a.dueDate) - new Date(b.dueDate)
-        : new Date(b.dueDate) - new Date(a.dueDate);
+        const dateA = new Date(a.dueDate).getTime();
+        const dateB = new Date(b.dueDate).getTime();
+        return sortOrder.value === 'asc' ? dateA - dateB : dateB - dateA;
     } else if (sortBy.value === 'status') {
-      return sortOrder.value === 'asc' 
-        ? Number(a.completed) - Number(b.completed)
-        : Number(b.completed) - Number(a.completed);
+        const statusA = a.completed ? 1 : 0;
+        const statusB = b.completed ? 1 : 0;
+        return sortOrder.value === 'asc' ? statusA - statusB : statusB - statusA;
     }
     return 0;
   });
@@ -45,10 +46,11 @@ const sortedTodos = computed(() => {
 const paginatedTodos = computed(() => {
   const startIndex = (currentPage.value - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
-  return sortedTodos.value.slice(startIndex, endIndex);
+  const paginated = sortedTodos.value.slice(startIndex, endIndex);
+  return paginated;
 });
 
-const totalPages = computed(() => Math.ceil(props.todos.length / itemsPerPage));
+const totalPages = computed(() => Math.ceil(sortedTodos.value.length / itemsPerPage));
 
 function changePage(page) {
   currentPage.value = page;
@@ -61,6 +63,8 @@ function toggleSort(column) {
     sortBy.value = column;
     sortOrder.value = 'asc';
   }
+  currentPage.value = 1;
+
 }
 </script>
 
@@ -119,10 +123,18 @@ function toggleSort(column) {
               {{ todo.description }}
             </div>
           </td>
-          <td class="border-b-2 border-black p-4">{{ todo.dueDate }}</td>
           <td class="border-b-2 border-black p-4">
-            <button class="btn btn-success" @click="emit('mark-complete', todo.id)">
-              <img class="w-5 text-center" :src="todo.completed ? checked_square : square" />
+            {{ new Date(todo.dueDate).toLocaleString('en-US', {
+                year: 'numeric',
+                month: 'numeric',
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+            }) }}
+            </td>
+          <td class="border-b-2 border-black p-4">
+            <button class="btn btn-success p-0 mt-1" @click="emit('mark-complete', todo.id)">
+              <img class="w-10 p-0 text-center" :src="todo.completed ? checked_square : square" />
             </button>
           </td>
           <td class="border-b-2 border-r-2 border-black w-min text-center">
@@ -133,7 +145,7 @@ function toggleSort(column) {
       </tbody>
     </table>
   </div>
-  <div v-if="totalPages > 1" class="mt-4 flex justify-center">
+  <div v-if="totalPages > 1" class="mt-auto py-4 flex justify-center">
     <button 
       v-for="page in totalPages" 
       :key="page" 
