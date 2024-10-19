@@ -2,6 +2,10 @@
 
 This project is a home assignment for Tomax. It's a ToDo list website built using Vue.js and tailwind for the frontend and Fastify on Node.js for the backend. The application is responsive and works on both desktop and mobile devices.
 
+
+https://github.com/user-attachments/assets/cf97a2c3-0c35-4f5d-8bdb-24b79ea21560
+
+
 ## Project Structure
 
 The project is organized into two main folders:
@@ -20,7 +24,7 @@ The project is organized into two main folders:
 1. Clone the repository:
 
    ```
-   git clone [YOUR_REPOSITORY_LINK_HERE]
+   git clone https://github.com/shaharariel95/tomax-assignment.git
    ```
 
 2. Set up the backend:
