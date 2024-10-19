@@ -1,15 +1,21 @@
 import Fastify from 'fastify'
 import cors from '@fastify/cors'
+import dotenv from 'dotenv'
 import todoRoutes from './routes/todoRoutes.js';
-const port = 5001;
+// import todoS3Routes from './routes/todos3Routes.js';
+// const port = 5001;
 
-const fastify = Fastify({ logger: false })
+dotenv.config()
+const port = process.env.PORT;
+console.log(`init server, getting port from .env: port = ${port}`)
+const fastify = Fastify({ logger: true })
 fastify.register(cors, {
     origin: 'http://localhost:5173',
     methods:['GET','POST', 'PUT', 'DELETE'],
 });
 
 fastify.register(todoRoutes);
+// fastify.register(todoS3Routes);
 
 fastify.listen({ port: port }, (err) => {
     if (err) {
