@@ -1,6 +1,5 @@
 import fastify from 'fastify';
 import { promises as fs } from 'fs';
-import { request } from 'http';
 import path from 'path';
 
 const todosFile = path.join(process.cwd(), 'todos.json');
