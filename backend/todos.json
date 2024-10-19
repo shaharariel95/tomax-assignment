@@ -5,7 +5,7 @@
     "description": "Set up the basic Fastify backend with ESM",
     "priority": "High",
     "dueDate": "2024-10-20T12:00:00Z",
-    "completed": false
+    "completed": true
   },
   {
     "id": "2",
@@ -13,7 +13,7 @@
     "description": "Set up the basic Vue.js front end for the Todo list app",
     "priority": "High",
     "dueDate": "2024-10-20T12:00:00Z",
-    "completed": false
+    "completed": true
   },
   {
     "id": "3",
@@ -22,5 +22,109 @@
     "priority": "High",
     "dueDate": "2024-10-14T12:00:00Z",
     "completed": true
+  },
+  {
+    "id": "4",
+    "priority": "High",
+    "title": "build the backend for the Tomax assignment",
+    "description": "Finish report aljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk Finish report aljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdv Finish report aljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdv",
+    "dueDate": "2024-10-20",
+    "completed": true
+  },
+  {
+    "id": "5",
+    "priority": "Medium",
+    "title": "Task 2",
+    "description": "Finish report aljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk Finish report aljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdv Finish report aljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdv",
+    "dueDate": "2024-10-21",
+    "completed": true
+  },
+  {
+    "id": "6",
+    "priority": "Medium",
+    "title": "Task 3",
+    "description": "Finish report aljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk Finish report aljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdv Finish report aljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdv",
+    "dueDate": "2024-10-22",
+    "completed": false
+  },
+  {
+    "id": "7",
+    "priority": "Low",
+    "title": "Task 4",
+    "description": "Finish report aljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk Finish report aljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdv Finish report aljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdv",
+    "dueDate": "2024-10-23",
+    "completed": true
+  },
+  {
+    "id": "8",
+    "priority": "High",
+    "title": "Task 5",
+    "description": "Finish report aljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk Finish report aljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdv Finish report aljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdv",
+    "dueDate": "2024-10-24",
+    "completed": true
+  },
+  {
+    "id": "9",
+    "priority": "Medium",
+    "title": "Task 6",
+    "description": "Finish report aljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk Finish report aljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdv Finish report aljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdv",
+    "dueDate": "2024-10-25",
+    "completed": true
+  },
+  {
+    "id": "10",
+    "priority": "Medium",
+    "title": "Task 7",
+    "description": "Team meeting a;fjvalerjvb slf Finish report aljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk Finish report aljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdv Finish report aljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvjba;lfja;lkjfd a;jdfba;jrf s",
+    "dueDate": "2024-10-26",
+    "completed": false
+  },
+  {
+    "id": "11",
+    "priority": "Medium",
+    "title": "Task 8",
+    "description": "Te Finish report aljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk Finish report aljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdv Finish report aljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvam meeting a;fjvalerjvb slfjba;lfja;lkjfd a;jdfba;jrf s",
+    "dueDate": "2024-10-27",
+    "completed": true
+  },
+  {
+    "title": "Testing test",
+    "description": "Testing the Testing add todo",
+    "priority": "Low",
+    "dueDate": "1111-11-11T11:11",
+    "completed": false,
+    "id": "1729243408844"
+  },
+  {
+    "title": "Testing test",
+    "description": "123",
+    "priority": "Medium",
+    "dueDate": "4444-04-04T04:44",
+    "completed": true,
+    "id": "1729244110749"
+  },
+  {
+    "title": "another test",
+    "description": "123",
+    "priority": "Medium",
+    "dueDate": "2222-02-22T22:22",
+    "completed": false,
+    "id": "1729244178004"
+  },
+  {
+    "title": "testing added todo",
+    "description": "5432123456",
+    "priority": "Medium",
+    "dueDate": "5555-05-05T05:55",
+    "completed": true,
+    "id": "1729244285838"
+  },
+  {
+    "title": "1",
+    "description": "1",
+    "priority": "Low",
+    "dueDate": "1231-12-31T23:04",
+    "completed": false,
+    "id": "1729244324276"
   }
 ]

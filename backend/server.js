@@ -1,9 +1,13 @@
 import Fastify from 'fastify'
+import cors from '@fastify/cors'
 import todoRoutes from './routes/todoRoutes.js';
 const port = 5001;
 
-const fastify = Fastify({ logger: true })
-
+const fastify = Fastify({ logger: false })
+fastify.register(cors, {
+    origin: 'http://localhost:5173',
+    methods:['GET','POST', 'PUT', 'DELETE'],
+});
 
 fastify.register(todoRoutes);
 

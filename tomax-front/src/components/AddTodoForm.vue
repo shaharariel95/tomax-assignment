@@ -29,32 +29,32 @@ const submitForm = () => {
       <h2 class="text-2xl font-bold mb-4">Add New Todo</h2>
       <form @submit.prevent="submitForm" class="space-y-4">
         <div>
-          <label for="title" class="block text-sm font-medium text-gray-800">Title</label>
+          <label for="title" class="block text-start text-basic font-semibold text-gray-800">Title</label>
           <input type="text" id="title" v-model="newTodo.title" required
                  class="mt-1 block w-full rounded-md bg-amber-50 border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
         </div>
         <div>
-          <label for="description" class="block text-sm font-medium text-gray-800">Description</label>
+          <label for="description" class="block text-start text-basic font-semibold text-gray-800">Description</label>
           <textarea id="description" v-model="newTodo.description" rows="3"
                     class="mt-1 block w-full rounded-md bg-amber-50 border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"></textarea>
         </div>
         <div>
-          <label for="priority" class="block text-sm font-medium text-gray-800">Priority</label>
+          <label for="priority" class="block text-start text-basic font-semibold text-gray-800">Priority</label>
           <select id="priority" v-model="newTodo.priority"
                   class="mt-1 block w-full rounded-md bg-amber-50 border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
-            <option>Low</option>
-            <option>Medium</option>
             <option>High</option>
+            <option>Medium</option>
+            <option>Low</option>
           </select>
         </div>
         <div>
-          <label for="dueDate" class="block text-sm font-medium text-gray-800">Due Date</label>
+          <label for="dueDate" class="block text-start text-basic font-semibold text-gray-800">Due Date</label>
           <input type="datetime-local" id="dueDate" v-model="newTodo.dueDate"
                  class="mt-1 block w-full rounded-md bg-amber-50 border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
         </div>
         <div class="flex justify-end space-x-2">
           <button type="button" @click="$emit('close')" class="btn btn-danger text-gray-800">Cancel</button>
-          <button type="submit" class="btn btn-primary text-gray-800">Add Todo</button>
+          <button type="submit" class="btn btn-primary text-gray-800">Add</button>
         </div>
       </form>
     </div>

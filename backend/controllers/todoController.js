@@ -47,7 +47,7 @@ export const addTodo = async (request, reply) => {
         const todos = await readTodos();
         todos.push(newTodo);
         await writeTodos(todos)
-        reply.code(200).send('succesfuly added todo item');
+        reply.code(200).send({massege: 'succesfuly added todo item'});
     } catch (err) {
         fastify.log.err(err);
         reply.code(500).send({ error: 'Error in adding Todo' });
@@ -66,7 +66,7 @@ export const updateTodo = async (request, reply) => {
         }
         todos[index] = { ...updatedTodo, id };
         await writeTodos(todos);
-        reply.code(200).send('succesfuly updated todo item');
+        reply.code(200).send(todos[index]);
     } catch (err) {
         reply.code(500).send({ error: 'Unable to update todo' });
     }
