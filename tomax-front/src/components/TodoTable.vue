@@ -55,11 +55,11 @@ const paginatedTodos = computed(() => {
 
 const totalPages = computed(() => Math.ceil(sortedTodos.value.length / itemsPerPage));
 
-function changePage(page) {
+const changePage = (page) => {
   currentPage.value = page;
 }
 
-function toggleSort(column) {
+const toggleSort = (column) => {
   if (sortBy.value === column) {
     sortOrder.value = sortOrder.value === 'asc' ? 'desc' : 'asc';
   } else {
@@ -70,12 +70,12 @@ function toggleSort(column) {
 
 }
 
-function openPopup(todo) {
+const openPopup = (todo) => {
   selectedTodo.value = todo;
   showPopup.value = true;
 }
 
-function closePopup() {
+const  closePopup = () =>{
   showPopup.value = false;
   selectedTodo.value = null;
 }

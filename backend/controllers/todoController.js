@@ -1,4 +1,3 @@
-import fastify from 'fastify';
 import { promises as fs } from 'fs';
 import path from 'path';
 
@@ -18,7 +17,7 @@ export const getTodos = async (request, reply) => {
         const todos = await readTodos();
         reply.send(todos);
     } catch (err) {
-        fastify.log.err(err);
+        request.log.error(err);
         reply.code(500).send({ error: 'Error in getting Todos' });
     }
 };
@@ -34,7 +33,7 @@ export const getTodoById = async (request, reply) => {
         }
         reply.send(todo);
     } catch (err) {
-        fastify.log.err(err);
+        request.log.error(err);
         reply.code(500).send({ error: 'Unable to read todos' });
     }
 };
@@ -48,7 +47,7 @@ export const addTodo = async (request, reply) => {
         await writeTodos(todos)
         reply.code(200).send({massege: 'succesfuly added todo item'});
     } catch (err) {
-        fastify.log.err(err);
+        request.log.error(err);
         reply.code(500).send({ error: 'Error in adding Todo' });
     }
 };
@@ -67,6 +66,7 @@ export const updateTodo = async (request, reply) => {
         await writeTodos(todos);
         reply.code(200).send(todos[index]);
     } catch (err) {
+        request.log.error(err);
         reply.code(500).send({ error: 'Unable to update todo' });
     }
 };
@@ -83,6 +83,7 @@ export const deleteTodo = async (request, reply) => {
         await writeTodos(newTodos);
         reply.code(200).send({ message: `Todo with ID ${id} deleted` });
     } catch (err) {
+        request.log.error(err);
         reply.code(500).send({ error: 'Unable to delete todo' });
     }
 };

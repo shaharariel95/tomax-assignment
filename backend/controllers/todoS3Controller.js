@@ -8,9 +8,6 @@ const accessKeyId = process.env.ACCESS_KEY_ID;
 const BUCKET_NAME = process.env.BUCKET_NAME;
 const ITEM_KEY = process.env.ITEM_KEY;
 
-console.log(`bucket name = ${BUCKET_NAME}`);
-console.log(`item_key = ${ITEM_KEY}`);
-
 const s3Client = new S3Client({
   region: "eu-west-1",
   credentials: {
@@ -38,6 +35,7 @@ async function readTodos() {
     const todosData = await streamToString(response.Body);
     return JSON.parse(todosData);
   } catch (err) {
+    request.log.error(err);
     throw new Error('Error reading todos from S3');
   }
 }
@@ -53,6 +51,7 @@ async function writeTodos(todos) {
   try {
     await s3Client.send(command);
   } catch (err) {
+    request.log.error(err);
     throw new Error('Error writing todos to S3');
   }
 }

@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue';
+import { v4 as uuidv4 } from 'uuid';
 
 const emit = defineEmits(['add', 'close']);
 
@@ -12,7 +13,8 @@ const newTodo = ref({
 });
 
 const submitForm = () => {
-  emit('add', { ...newTodo.value, id: Date.now().toString() });
+  const newId = uuidv4();
+  emit('add', { ...newTodo.value, id: newId });
   newTodo.value = {
     title: '',
     description: '',
