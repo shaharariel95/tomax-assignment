@@ -238,7 +238,7 @@ function closePopup() {
           <p class="mb-2"><strong>Due Date:</strong> {{ new Date(selectedTodo.dueDate).toLocaleString() }}</p>
           <p class="mb-4"><strong>Status:</strong> {{ selectedTodo.completed ? 'Completed' : 'Pending' }} </p>
           <div class="flex justify-end">
-            <button class="p-1 btn btn-danger mr-4" @click="emit('delete', todo.id)">
+            <button class="p-1 btn btn-danger mr-4" @click="{emit('delete', selectedTodo.id); closePopup();}">
               <img class="w-8" :src='deleteIcon'/>
             </button>
             <button @click="closePopup" class="btn btn-danger border-purple-600 text-gray-800">Close</button>
