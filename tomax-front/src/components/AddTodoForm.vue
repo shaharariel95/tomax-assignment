@@ -54,7 +54,7 @@ const submitForm = () => {
         </div>
         <div class="flex justify-end space-x-2">
           <button type="button" @click="$emit('close')" class="btn btn-danger text-gray-800">Cancel</button>
-          <button type="submit" class="btn btn-primary text-gray-800">Add Todo</button>
+          <button type="submit" class="btn btn-primary text-gray-800">Add</button>
         </div>
       </form>
     </div>

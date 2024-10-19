@@ -113,7 +113,7 @@ function closePopup() {
               </tr>
             </thead>
             <tbody>
-              <tr v-for="todo in paginatedTodos" :key="todo.id">
+              <tr v-for="todo in paginatedTodos" :key="todo.id" :class="{'line-through bg-green-100' : todo.completed}">
                 <td class="border-b-2 border-black p-4 text-red-600 font-semibold border-l-2">
                   <div class="flex items-center justify-center">
                     <img 
@@ -169,8 +169,8 @@ function closePopup() {
         <!-- Mobile view -->
         <div class="md:hidden">
           <!-- Mobile sorting buttons -->
-          <div class="flex justify-around bg-gray-200 p-2 sticky top-0 z-10">
-            sort:
+          <div class="flex justify-around bg-gray-200 p-2 rounded-md top-0">
+            sort by:
             <button @click="toggleSort('priority')" class="px-2 py-1 text-sm font-semibold">
               Priority
               <span v-if="sortBy === 'priority'">{{ sortOrder === 'asc' ? '▲' : '▼' }}</span>
@@ -184,9 +184,19 @@ function closePopup() {
               <span v-if="sortBy === 'status'">{{ sortOrder === 'asc' ? '▲' : '▼' }}</span>
             </button>
           </div>
+
+          <!-- Mobile sorting buttons -->
+            <div class="flex items-center justify-between mt-4 rounded-lg bg-gray-200 p-2  top-0 ">
+              <span class="font-semibold text-lg">priority</span>
+              <span class="font-semibold text-lg">title</span>
+              <div>
+              <span class="font-semibold text-lg mr-4">status</span>
+              <span class="font-semibold text-lg">details</span>
+            </div>
+            </div>
           
           <!-- Mobile todo list -->
-          <div v-for="todo in paginatedTodos" :key="todo.id" class="border-b-2 border-black p-4 flex items-center justify-between">
+          <div v-for="todo in paginatedTodos" :key="todo.id" class="border-b-2 border-black p-4 flex items-center justify-between" :class="{'line-through bg-green-100' : todo.completed}">
             <div class="flex items-center">
               <img 
                 :src="todo.priority === 'High' ? highPriorityIcon : todo.priority === 'Medium' ? mediumPriorityIcon : lowPriorityIcon"
@@ -228,8 +238,10 @@ function closePopup() {
           <p class="mb-2"><strong>Due Date:</strong> {{ new Date(selectedTodo.dueDate).toLocaleString() }}</p>
           <p class="mb-4"><strong>Status:</strong> {{ selectedTodo.completed ? 'Completed' : 'Pending' }} </p>
           <div class="flex justify-end">
-            <button @click="emit('delete', selectedTodo.id)" class="bg-red-500 text-white px-4 py-2 rounded mr-2">Delete</button>
-            <button @click="closePopup" class="bg-gray-300 px-4 py-2 rounded">Close</button>
+            <button class="p-1 btn btn-danger mr-4" @click="emit('delete', todo.id)">
+              <img class="w-8" :src='deleteIcon'/>
+            </button>
+            <button @click="closePopup" class="btn btn-danger border-purple-600 text-gray-800">Close</button>
           </div>
         </div>
       </div>
