@@ -1,130 +1,202 @@
 [
   {
-    "id": "1",
-    "title": "Create a Fastify backend",
-    "description": "Set up the basic Fastify backend with ESM",
-    "priority": "High",
-    "dueDate": "2024-10-20T12:00:00Z",
-    "completed": true
+      "id": "1",
+      "title": "Set up project repository",
+      "description": "Set up project repository - Task to ensure functionality and quality in the project workflow.",
+      "priority": "High",
+      "dueDate": "2024-11-11T12:15:53.079585",
+      "completed": false
   },
   {
-    "id": "2",
-    "title": "Create a Vue Frontend",
-    "description": "Set up the basic Vue.js front end for the Todo list app",
-    "priority": "High",
-    "dueDate": "2024-10-20T12:00:00Z",
-    "completed": true
+      "id": "2",
+      "title": "Implement user authentication",
+      "description": "Implement user authentication - Task to ensure functionality and quality in the project workflow.",
+      "priority": "Low",
+      "dueDate": "2024-10-28T12:15:53.079607",
+      "completed": false
   },
   {
-    "id": "3",
-    "title": "Update backend to include more features",
-    "description": "build Get todos, Get todo/{:id}, POST todo, put todo/{:id} ( update ), delete todo/{:id}",
-    "priority": "High",
-    "dueDate": "2024-10-14T12:00:00Z",
-    "completed": true
+      "id": "3",
+      "title": "Design landing page UI",
+      "description": "Design landing page UI - Task to ensure functionality and quality in the project workflow.",
+      "priority": "Medium",
+      "dueDate": "2024-11-10T12:15:53.079614",
+      "completed": false
   },
   {
-    "id": "4",
-    "priority": "High",
-    "title": "build the backend for the Tomax assignment",
-    "description": "Finish report aljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk Finish report aljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdv Finish report aljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdv",
-    "dueDate": "2024-10-20",
-    "completed": true
+      "id": "4",
+      "title": "Create API documentation",
+      "description": "Create API documentation - Task to ensure functionality and quality in the project workflow.",
+      "priority": "High",
+      "dueDate": "2024-11-27T12:15:53.079623",
+      "completed": true
   },
   {
-    "id": "5",
-    "priority": "Medium",
-    "title": "Task 2",
-    "description": "Finish report aljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk Finish report aljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdv Finish report aljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdv",
-    "dueDate": "2024-10-21",
-    "completed": true
+      "id": "5",
+      "title": "Develop unit tests for API",
+      "description": "Develop unit tests for API - Task to ensure functionality and quality in the project workflow.",
+      "priority": "Medium",
+      "dueDate": "2024-12-14T12:15:53.079632",
+      "completed": false
   },
   {
-    "id": "6",
-    "priority": "Medium",
-    "title": "Task 3",
-    "description": "Finish report aljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk Finish report aljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdv Finish report aljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdv",
-    "dueDate": "2024-10-22",
-    "completed": false
+      "id": "6",
+      "title": "Refactor codebase for optimization",
+      "description": "Refactor codebase for optimization - Task to ensure functionality and quality in the project workflow.",
+      "priority": "Low",
+      "dueDate": "2024-11-01T12:15:53.079644",
+      "completed": true
   },
   {
-    "id": "7",
-    "priority": "Low",
-    "title": "Task 4",
-    "description": "Finish report aljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk Finish report aljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdv Finish report aljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdv",
-    "dueDate": "2024-10-23",
-    "completed": true
+      "id": "7",
+      "title": "Set up database schema",
+      "description": "Set up database schema - Task to ensure functionality and quality in the project workflow.",
+      "priority": "High",
+      "dueDate": "2024-11-04T12:15:53.079652",
+      "completed": false
   },
   {
-    "id": "8",
-    "priority": "High",
-    "title": "Task 5",
-    "description": "Finish report aljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk Finish report aljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdv Finish report aljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdv",
-    "dueDate": "2024-10-24",
-    "completed": true
+      "id": "8",
+      "title": "Implement user profile feature",
+      "description": "Implement user profile feature - Task to ensure functionality and quality in the project workflow.",
+      "priority": "High",
+      "dueDate": "2024-11-30T12:15:53.079660",
+      "completed": false
   },
   {
-    "id": "9",
-    "priority": "Medium",
-    "title": "Task 6",
-    "description": "Finish report aljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk Finish report aljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdv Finish report aljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdv",
-    "dueDate": "2024-10-25",
-    "completed": true
+      "id": "9",
+      "title": "Create admin dashboard",
+      "description": "Create admin dashboard - Task to ensure functionality and quality in the project workflow.",
+      "priority": "High",
+      "dueDate": "2024-11-08T12:15:53.079671",
+      "completed": false
   },
   {
-    "id": "10",
-    "priority": "Medium",
-    "title": "Task 7",
-    "description": "Team meeting a;fjvalerjvb slf Finish report aljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk Finish report aljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdv Finish report aljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvjba;lfja;lkjfd a;jdfba;jrf s",
-    "dueDate": "2024-10-26",
-    "completed": false
+      "id": "10",
+      "title": "Research third-party API integration",
+      "description": "Research third-party API integration - Task to ensure functionality and quality in the project workflow.",
+      "priority": "Low",
+      "dueDate": "2024-11-08T12:15:53.079677",
+      "completed": true
   },
   {
-    "id": "11",
-    "priority": "Medium",
-    "title": "Task 8",
-    "description": "Te Finish report aljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk Finish report aljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdv Finish report aljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvbalirgfal valireugfl zKJ DvlIRgLIRGFlk ljialkjdvam meeting a;fjvalerjvb slfjba;lfja;lkjfd a;jdfba;jrf s",
-    "dueDate": "2024-10-27",
-    "completed": true
+      "id": "11",
+      "title": "Fix bugs in login module",
+      "description": "Fix bugs in login module - Task to ensure functionality and quality in the project workflow.",
+      "priority": "Low",
+      "dueDate": "2024-12-08T12:15:53.079682",
+      "completed": true
   },
   {
-    "title": "Testing test",
-    "description": "Testing the Testing add todo",
-    "priority": "Low",
-    "dueDate": "1111-11-11T11:11",
-    "completed": false,
-    "id": "1729243408844"
+      "id": "12",
+      "title": "Optimize frontend performance",
+      "description": "Optimize frontend performance - Task to ensure functionality and quality in the project workflow.",
+      "priority": "High",
+      "dueDate": "2024-11-28T12:15:53.079695",
+      "completed": true
   },
   {
-    "title": "Testing test",
-    "description": "123",
-    "priority": "Medium",
-    "dueDate": "4444-04-04T04:44",
-    "completed": true,
-    "id": "1729244110749"
+      "id": "13",
+      "title": "Create demo video for presentation",
+      "description": "Create demo video for presentation - Task to ensure functionality and quality in the project workflow.",
+      "priority": "Medium",
+      "dueDate": "2024-12-02T12:15:53.079699",
+      "completed": false
   },
   {
-    "title": "another test",
-    "description": "123",
-    "priority": "Medium",
-    "dueDate": "2222-02-22T22:22",
-    "completed": false,
-    "id": "1729244178004"
+      "id": "14",
+      "title": "Plan sprint for next release",
+      "description": "Plan sprint for next release - Task to ensure functionality and quality in the project workflow.",
+      "priority": "Medium",
+      "dueDate": "2024-10-26T12:15:53.079704",
+      "completed": true
   },
   {
-    "title": "testing added todo",
-    "description": "5432123456",
-    "priority": "Medium",
-    "dueDate": "5555-05-05T05:55",
-    "completed": true,
-    "id": "1729244285838"
+      "id": "15",
+      "title": "Prepare deployment scripts",
+      "description": "Prepare deployment scripts - Task to ensure functionality and quality in the project workflow.",
+      "priority": "High",
+      "dueDate": "2024-11-17T12:15:53.079708",
+      "completed": true
   },
   {
-    "title": "1",
-    "description": "1",
-    "priority": "Low",
-    "dueDate": "1231-12-31T23:04",
-    "completed": false,
-    "id": "1729244324276"
+      "id": "16",
+      "title": "Write end-to-end tests",
+      "description": "Write end-to-end tests - Task to ensure functionality and quality in the project workflow.",
+      "priority": "Low",
+      "dueDate": "2024-11-14T12:15:53.079712",
+      "completed": false
+  },
+  {
+      "id": "17",
+      "title": "Collaborate with design team on UX",
+      "description": "Collaborate with design team on UX - Task to ensure functionality and quality in the project workflow.",
+      "priority": "High",
+      "dueDate": "2024-12-06T12:15:53.079716",
+      "completed": false
+  },
+  {
+      "id": "18",
+      "title": "Update API to support pagination",
+      "description": "Update API to support pagination - Task to ensure functionality and quality in the project workflow.",
+      "priority": "Low",
+      "dueDate": "2024-10-20T12:15:53.079720",
+      "completed": false
+  },
+  {
+      "id": "19",
+      "title": "Implement email notification system",
+      "description": "Implement email notification system - Task to ensure functionality and quality in the project workflow.",
+      "priority": "High",
+      "dueDate": "2024-10-26T12:15:53.079725",
+      "completed": false
+  },
+  {
+      "id": "20",
+      "title": "Configure CI/CD pipeline",
+      "description": "Configure CI/CD pipeline - Task to ensure functionality and quality in the project workflow.",
+      "priority": "High",
+      "dueDate": "2024-12-18T12:15:53.079737",
+      "completed": true
+  },
+  {
+      "id": "21",
+      "title": "Review PR for feature X",
+      "description": "Review PR for feature X - Task to ensure functionality and quality in the project workflow.",
+      "priority": "Low",
+      "dueDate": "2024-12-02T12:15:53.079742",
+      "completed": false
+  },
+  {
+      "id": "22",
+      "title": "Integrate payment gateway",
+      "description": "Integrate payment gateway - Task to ensure functionality and quality in the project workflow.",
+      "priority": "Medium",
+      "dueDate": "2024-10-26T12:15:53.079747",
+      "completed": true
+  },
+  {
+      "id": "23",
+      "title": "Organize team retrospective",
+      "description": "Organize team retrospective - Task to ensure functionality and quality in the project workflow.",
+      "priority": "High",
+      "dueDate": "2024-11-09T12:15:53.079751",
+      "completed": false
+  },
+  {
+      "id": "24",
+      "title": "Finalize project report",
+      "description": "Finalize project report - Task to ensure functionality and quality in the project workflow.",
+      "priority": "High",
+      "dueDate": "2024-11-08T12:15:53.079756",
+      "completed": true
+  },
+  {
+      "id": "25",
+      "title": "Update project roadmap",
+      "description": "Update project roadmap - Task to ensure functionality and quality in the project workflow.",
+      "priority": "High",
+      "dueDate": "2024-10-27T12:15:53.079760",
+      "completed": true
   }
 ]

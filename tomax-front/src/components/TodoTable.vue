@@ -55,11 +55,11 @@ const paginatedTodos = computed(() => {
 
 const totalPages = computed(() => Math.ceil(sortedTodos.value.length / itemsPerPage));
 
-function changePage(page) {
+const changePage = (page) => {
   currentPage.value = page;
 }
 
-function toggleSort(column) {
+const toggleSort = (column) => {
   if (sortBy.value === column) {
     sortOrder.value = sortOrder.value === 'asc' ? 'desc' : 'asc';
   } else {
@@ -70,12 +70,12 @@ function toggleSort(column) {
 
 }
 
-function openPopup(todo) {
+const openPopup = (todo) => {
   selectedTodo.value = todo;
   showPopup.value = true;
 }
 
-function closePopup() {
+const  closePopup = () =>{
   showPopup.value = false;
   selectedTodo.value = null;
 }
@@ -238,7 +238,7 @@ function closePopup() {
           <p class="mb-2"><strong>Due Date:</strong> {{ new Date(selectedTodo.dueDate).toLocaleString() }}</p>
           <p class="mb-4"><strong>Status:</strong> {{ selectedTodo.completed ? 'Completed' : 'Pending' }} </p>
           <div class="flex justify-end">
-            <button class="p-1 btn btn-danger mr-4" @click="emit('delete', todo.id)">
+            <button class="p-1 btn btn-danger mr-4" @click="{emit('delete', selectedTodo.id); closePopup();}">
               <img class="w-8" :src='deleteIcon'/>
             </button>
             <button @click="closePopup" class="btn btn-danger border-purple-600 text-gray-800">Close</button>

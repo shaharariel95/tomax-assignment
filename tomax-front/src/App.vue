@@ -1,7 +1,7 @@
 <script setup>
 import { ref, computed } from 'vue';
 import AddTodoButton from './components/AddTodoButton.vue';
-import Newtable from './components/Newtable.vue';
+import TodoTable from './components/TodoTable.vue';
 import AddTodoForm from './components/AddTodoForm.vue';
 import { useTodos } from './composables/useTodos';
 
@@ -34,7 +34,7 @@ const showError = computed(() => !!error.value);
         </div>
         
         <div class="flex-grow overflow-auto p-4">
-          <Newtable :todos="todos" @delete="deleteTodo" @edit="editTodo" @mark-complete="markComplete" />
+          <TodoTable :todos="todos" @delete="deleteTodo" @edit="editTodo" @mark-complete="markComplete" />
         </div>
       </div>
     </div>

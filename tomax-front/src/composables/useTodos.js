@@ -66,8 +66,6 @@ export function useTodos() {
             if (!response.ok) {
                 throw new Error('Failed to update todo');
             }
-            console.log("response from editTodo")
-            console.log(response)
             const updated = await response.json();
             const index = todos.value.findIndex(todo => todo.id === id);
             if (index !== -1) {
